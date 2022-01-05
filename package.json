@@ -1,0 +1,19 @@
+{
+  "name": "@aiflow/microservice-gateway",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "release": "npm publish --access public"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^8.2.4",
+    "@nestjs/core": "^8.2.4",
+    "@nestjs/microservices": "^8.2.4",
+    "mongoose": "^6.1.5",
+    "rxjs": "^7.5.1",
+    "typescript": "^4.5.4"
+  }
+}
