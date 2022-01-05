@@ -130,7 +130,7 @@
     tslib "2.3.1"
     uuid "8.3.2"
 
-"@nestjs/graphql@^9.1.2":
+"@nestjs/graphql@9.1.2":
   version "9.1.2"
   resolved "https://registry.yarnpkg.com/@nestjs/graphql/-/graphql-9.1.2.tgz#248f9e4017119689488ee9336d323eae8063dd2f"
   integrity sha512-ncxmkKmrswnHJ+jLgc6tbkRET6HAyC3gK6WKt1CdPLjvMnXVpFVpyQMFSenNXxAndInw9IgaiSyiJFdRYZVD/w==
@@ -293,7 +293,7 @@
     "@types/qs" "*"
     "@types/serve-static" "*"
 
-"@types/lodash@^4.14.178":
+"@types/lodash@4.14.178":
   version "4.14.178"
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.178.tgz#341f6d2247db528d4a13ddbb374bcdc80406f4f8"
   integrity sha512-0d5Wd09ItQWH1qFbEyQ7oTQ3GZrMfth5JkbN3EvTKLXcHLRDSXeLnlvlOn0wvxVIwK5o2M8JzP/OWz7T3NRsbw==
@@ -438,7 +438,7 @@ apollo-server-errors@^3.3.0:
   resolved "https://registry.yarnpkg.com/apollo-server-errors/-/apollo-server-errors-3.3.0.tgz#ac8ceb1400064312f983d8d70195693fbcf2be3c"
   integrity sha512-9/MNlPZBbEjcCdJcUSbKbVEBT9xZS8GSpX7T/TyzcxHSbsXJszSDSipQNGC+PRKTKAUnv61IONScVyLKEZ5XEQ==
 
-apollo-server-express@^3.6.1:
+apollo-server-express@3.6.1:
   version "3.6.1"
   resolved "https://registry.yarnpkg.com/apollo-server-express/-/apollo-server-express-3.6.1.tgz#b8bda303e05c551ac76c9c0b26bc651ca1466912"
   integrity sha512-29imWvRPn5GsQq02Akt0+jejpWzpOIZfUmgoiFm4YB7somvhDNw15Pu7fv4sISK8ehNIDF68IpLd2cpY8sCkYQ==
@@ -574,7 +574,7 @@ chokidar@3.5.2:
   optionalDependencies:
     fsevents "~2.3.2"
 
-class-validator@^0.13.2:
+class-validator@0.13.2:
   version "0.13.2"
   resolved "https://registry.yarnpkg.com/class-validator/-/class-validator-0.13.2.tgz#64b031e9f3f81a1e1dcd04a5d604734608b24143"
   integrity sha512-yBUcQy07FPlGzUjoLuUfIOXzgynnQPPruyK1Ge2B74k9ROwnle1E+NxLWnUv5OLU8hA/qL5leAE9XnXq3byaBw==
@@ -720,7 +720,7 @@ graphql-ws@5.5.5:
   resolved "https://registry.yarnpkg.com/graphql-ws/-/graphql-ws-5.5.5.tgz#f375486d3f196e2a2527b503644693ae3a8670a9"
   integrity sha512-hvyIS71vs4Tu/yUYHPvGXsTgo0t3arU820+lT5VjZS2go0ewp2LqyCgxEN56CzOG7Iys52eRhHBiD1gGRdiQtw==
 
-graphql@^16.2.0:
+graphql@16.2.0:
   version "16.2.0"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-16.2.0.tgz#de3150e80f1fc009590b92a9d16ab1b46e12b656"
   integrity sha512-MuQd7XXrdOcmfwuLwC2jNvx0n3rxIuNYOxUtiee5XOmfrWo613ar2U8pE7aHAKh8VwfpifubpD9IP+EdEAEOsA==
@@ -812,7 +812,7 @@ lodash.sortby@^4.7.0:
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
   integrity sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=
 
-lodash@4.17.21, lodash@^4.17.21:
+lodash@4.17.21:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==

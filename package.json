@@ -1,6 +1,6 @@
 {
   "name": "@aiflow/microservice-gateway",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "MIT",
@@ -11,13 +11,13 @@
   "devDependencies": {
     "@nestjs/common": "8.2.4",
     "@nestjs/core": "8.2.4",
-    "@nestjs/graphql": "^9.1.2",
+    "@nestjs/graphql": "9.1.2",
     "@nestjs/microservices": "8.2.4",
-    "@types/lodash": "^4.14.178",
-    "apollo-server-express": "^3.6.1",
-    "class-validator": "^0.13.2",
-    "graphql": "^16.2.0",
-    "lodash": "^4.17.21",
+    "@types/lodash": "4.14.178",
+    "apollo-server-express": "3.6.1",
+    "class-validator": "0.13.2",
+    "graphql": "16.2.0",
+    "lodash": "4.17.21",
     "mongoose": "6.1.5",
     "rxjs": "7.5.1",
     "typescript": "4.5.4"
