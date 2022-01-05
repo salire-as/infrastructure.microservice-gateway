@@ -13,6 +13,7 @@
     },
     "include": [
       "src/index.ts",
-      "src/types/queue-transporter.ts"
+      "src/types/transporter.ts",
+      "src/types/event-payload.ts"
     ],
   }

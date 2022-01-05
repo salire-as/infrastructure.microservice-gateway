@@ -2,7 +2,7 @@ import { Logger } from '@nestjs/common';
 import { ClientProxy } from '@nestjs/microservices';
 import { AnyObject } from 'mongoose';
 import { firstValueFrom } from 'rxjs';
-import { EmitEvent, EmitManyEvents, TransportOptionMethods } from './types/queue-transporter';
+import { EmitEvent, EmitManyEvents, TransportOptionMethods } from './types/transporter';
 
 export class MicroserviceGateway<CommandModel extends AnyObject> {
   constructor(private readonly client: ClientProxy, private readonly options?: TransportOptionMethods) {}

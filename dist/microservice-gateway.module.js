@@ -27,11 +27,18 @@ let MicroserviceGatewayModule = MicroserviceGatewayModule_1 = class Microservice
     static forRootAsync(clients, options) {
         const clientsFactory = microservices_1.ClientsModule.register(clients);
         const clientTransporters = this.createTransporters(clients);
-        const asyncFactory = this.createAsyncFactory(options);
+        const imports = [clientsFactory];
+        const providers = clientTransporters;
+        if (options) {
+            if (options.imports) {
+                imports.push(...(options.imports || []));
+            }
+            providers.push(this.createAsyncFactory(options));
+        }
         return {
             module: MicroserviceGatewayModule_1,
-            imports: [...(options.imports || []), clientsFactory],
-            providers: [asyncFactory, ...clientTransporters],
+            imports,
+            providers,
             exports: clientTransporters,
         };
     }

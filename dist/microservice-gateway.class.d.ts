@@ -1,6 +1,6 @@
 import { ClientProxy } from '@nestjs/microservices';
 import { AnyObject } from 'mongoose';
-import { EmitEvent, EmitManyEvents, TransportOptionMethods } from './types/queue-transporter';
+import { EmitEvent, EmitManyEvents, TransportOptionMethods } from './types/transporter';
 export declare class MicroserviceGateway<CommandModel extends AnyObject> {
     private readonly client;
     private readonly options?;

@@ -3,7 +3,7 @@ import { ClientProviderOptions, ClientsModule } from '@nestjs/microservices';
 import { MICROSERVICE_GATEWAY_TRANSPORT_FACTORY } from './microservice-gateway.constants';
 import { microserviceGatewayTransporterFactory } from './microservice-gateway-transporter-factory';
 import { createTransporterToken } from './microservice-gateway.utils';
-import { AsyncTransporterFactory } from './types/queue-transporter';
+import { AsyncTransporterFactory } from './types/transporter';
 
 @Global()
 @Module({})
