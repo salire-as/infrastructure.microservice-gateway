@@ -1,12 +1,14 @@
 import { ExecutionContext, HttpException, HttpStatus } from '@nestjs/common';
 import { GqlExecutionContext } from '@nestjs/graphql';
-import { isString, isArray, isPlainObject } from 'lodash';
-import { AnyObject, isValidObjectId, Types } from 'mongoose';
+import { isString, isArray, isPlainObject, isNil } from 'lodash';
+import { AnyObject, Types } from 'mongoose';
 import { isDateString } from 'class-validator';
 
 export const createTransporterToken = (name: string) => {
   return `${name.toUpperCase()}_TRANSPORTER`;
 };
+
+export const isValidObjectId = (value: string) => !isNil(value) && !!value.match(new RegExp('^[0-9a-fA-F]{24}$'));
 
 export const getRequestFromExecutionContext = (context: ExecutionContext) => {
   const type = context.getType();
