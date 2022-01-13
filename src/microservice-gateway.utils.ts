@@ -25,7 +25,7 @@ export const formatEventPayload = <T>(payload: AnyObject): T => {
   if (isString(updatedPayload)) {
     if (isValidObjectId(updatedPayload)) {
       updatedPayload = new Types.ObjectId(updatedPayload);
-    } else if (isDateString(updatedPayload)) {
+    } else if (updatedPayload?.length > 7 && isDateString(updatedPayload)) {
       updatedPayload = new Date(updatedPayload);
     }
   } else if (isArray(updatedPayload)) {
