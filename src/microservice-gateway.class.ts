@@ -7,8 +7,6 @@ import { EmitEvent, EmitManyEvents, TransportOptionMethods } from './types/trans
 export class MicroserviceGateway<CommandModel extends AnyObject> {
   constructor(private readonly client: ClientProxy, private readonly options?: TransportOptionMethods) {}
 
-  private logger = new Logger(MicroserviceGateway.name);
-
   public emit<Command extends keyof CommandModel>(request: EmitEvent<Command, CommandModel[Command]>) {
     const { cmd, payload } = request;
 
@@ -19,8 +17,6 @@ export class MicroserviceGateway<CommandModel extends AnyObject> {
     this.options?.middleware?.(request, data);
 
     const observer = this.client.emit(cmd, data);
-
-    this.logger.debug(`[RPC] [EMITTED] ${cmd}`, { request: data });
 
     return observer;
   }
@@ -43,11 +39,6 @@ export class MicroserviceGateway<CommandModel extends AnyObject> {
     const observer = this.client.send(cmd, data);
 
     const response = await firstValueFrom(observer);
-
-    this.logger.debug(`[RPC] [RESPONSE] ${cmd}`, {
-      request: data,
-      response,
-    });
 
     return response;
   }
