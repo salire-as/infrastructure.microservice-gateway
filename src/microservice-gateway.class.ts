@@ -1,7 +1,7 @@
-import { Logger } from '@nestjs/common';
 import { ClientProxy } from '@nestjs/microservices';
 import { AnyObject } from 'mongoose';
-import { firstValueFrom } from 'rxjs';
+import { firstValueFrom, timeout } from 'rxjs';
+import { REQUEST_TIMEOUT } from './microservice-gateway.constants';
 import { EmitEvent, EmitManyEvents, TransportOptionMethods } from './types/transporter';
 
 export class MicroserviceGateway<CommandModel extends AnyObject> {
@@ -36,7 +36,7 @@ export class MicroserviceGateway<CommandModel extends AnyObject> {
 
     this.options?.middleware?.(request, data);
 
-    const observer = this.client.send(cmd, data);
+    const observer = this.client.send(cmd, data).pipe(timeout(REQUEST_TIMEOUT));
 
     const response = await firstValueFrom(observer);
 
