@@ -5,7 +5,8 @@
   "types": "dist/index.d.ts",
   "private": true,
   "repository": {
-    "url": "git://github.com/salire-aiflow/microservice-gateway.git"
+    "type": "git",
+    "url": "https://github.com/salire-aiflow/microservice-gateway.git"
   },
   "license": "MIT",
   "scripts": {
