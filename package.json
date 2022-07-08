@@ -1,11 +1,11 @@
 {
-  "name": "@salire-aiflow/microservice-gateway",
+  "name": "@salire-as/infrastructure.microservice-gateway",
   "version": "1.1.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/salire-aiflow/microservice-gateway.git"
+    "url": "https://github.com/salire-as/infrastructure.microservice-gateway.git"
   },
   "license": "MIT",
   "scripts": {
